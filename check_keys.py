@@ -52,8 +52,8 @@ def main():
             check_public_key,
             (
                 glob.glob(f"{out}/obj/**/*.apk", recursive=True)
-                + glob.glob(f"{out}/obj/**/*.apex", recursive=True)
-                + glob.glob(f"{out}/obj/**/*.capex", recursive=True)
+                + glob.glob(f"{out}/*/apex/*.apex", recursive=True)
+                + glob.glob(f"{out}/*/apex/*.capex", recursive=True)
             ),
         )
 
